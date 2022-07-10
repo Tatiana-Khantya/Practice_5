@@ -29,10 +29,11 @@ void PrintArray(int[] arr)
     {
         if (i == 0) Console.Write("[");
         if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
-        else Console.Write(arr[i] + "]\n");
+        else Console.Write(arr[i] + "]");
     }
 }
 int[] array = CreateArrayRndInt(5, 1, 11);
 PrintArray(array);
+Console.WriteLine();
 int sumOddIndex = OddIndex(array);
 Console.WriteLine(sumOddIndex);

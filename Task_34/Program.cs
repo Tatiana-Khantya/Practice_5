@@ -29,11 +29,12 @@ void PrintArray(int[] arr)
     {
         if (i == 0) Console.Write("[");
         if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
-        else Console.Write(arr[i] + "]\n");
+        else Console.Write(arr[i] + "]");
     }
 }
 int[] array = CreateArrayRndInt(10, 100, 1000);
 PrintArray(array);
+Console.WriteLine();
 int even = EvenNum(array);
 Console.WriteLine(even);
 
